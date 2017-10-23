@@ -1,5 +1,6 @@
 # AI-2048
 Modification of Gariele Cirulli's [2048](https://github.com/gabrielecirulli/2048) to include player and system AI.
+[View it on Github Pages.](https://takuyakanbr.github.io/2048)
 
 ### Modifying the AI file
 In order to speed up execution time, ai.js contains code compiled using Emscripten compiler. Follow the below steps to modify ai.js:

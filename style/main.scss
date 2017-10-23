@@ -461,9 +461,37 @@ hr {
   margin-bottom: 0;
 }
 
+.player-button-container, .opponent-button-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
 .player-button, .opponent-button {
   @include button;
+  padding: 0 22px;
   text-align: center;
+}
+
+.player-button-container:before, .opponent-button-container:before {
+  position: absolute;
+  width: 120%;
+  top: -12px;
+  left: -10%;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #bbada0;
+}
+
+.player-button-container::before {
+  content: 'Player';
+}
+
+.opponent-button-container::before {
+  content: 'New tiles';
 }
 
 .restart-button {
@@ -523,10 +551,8 @@ hr {
   }
 
   .player-button, .opponent-button {
-    width: 42%;
-    padding: 0;
+    padding: 0 7px;
     box-sizing: border-box;
-    margin-top: 2px;
   }
 
   .restart-button {
